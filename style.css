@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f4fb;
+  color: #27213a;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.park-header {
+  padding: 3rem 1rem;
+  background: #4c3368;
+  color: white;
+  text-align: center;
+}
+
+.park-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.15;
+}
+
+.park-header p {
+  max-width: 34rem;
+  margin: 0.75rem auto 0;
+}
+
+.park-content {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.breed-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #ddd4e8;
+  border-radius: 1rem;
+}
+
+.breed-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.breed-details {
+  padding: 1rem;
+}
+
+.breed-details h3 {
+  margin: 0;
+}
+
+.breed-details p {
+  margin: 0.6rem 0 0;
+}
+
+@media (max-width: 720px) {
+  .breed-grid {
+    grid-template-columns: 1fr;
+  }
+}
