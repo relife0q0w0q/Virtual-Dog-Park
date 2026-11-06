@@ -118,6 +118,15 @@ body {
   margin-top: 0;
 }
 
+#pet-growth {
+  width: min(100%, 22rem);
+  accent-color: #4c3368;
+}
+
+#pet-status button {
+  margin-bottom: 0.35rem;
+}
+
 @media (max-width: 720px) {
   .breed-grid {
     grid-template-columns: 1fr;
