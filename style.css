@@ -65,6 +65,59 @@ body {
   margin: 0.6rem 0 0;
 }
 
+.pet-section {
+  margin-top: 2rem;
+}
+
+.pet-panel {
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ddd4e8;
+  border-radius: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.pet-panel label {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.pet-panel input,
+.pet-panel select,
+.pet-panel button {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #78628d;
+  border-radius: 0.4rem;
+  font: inherit;
+}
+
+.pet-panel input,
+.pet-panel select {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+}
+
+.pet-panel button {
+  background: #4c3368;
+  color: white;
+  cursor: pointer;
+}
+
+.pet-panel button:hover {
+  background: #3a2650;
+}
+
+.form-error {
+  margin: 0.5rem 0;
+  color: #a12339;
+}
+
+.pet-panel h3 {
+  margin-top: 0;
+}
+
 @media (max-width: 720px) {
   .breed-grid {
     grid-template-columns: 1fr;

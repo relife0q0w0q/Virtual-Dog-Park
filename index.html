@@ -46,6 +46,36 @@
         </article>
       </div>
     </section>
+    <section class="pet-section" aria-labelledby="pet-title">
+      <h2 id="pet-title">My Virtual Dog</h2>
+      <div class="pet-panel">
+        <form id="adoption-form">
+          <label for="dog-breed">Breed</label>
+          <select id="dog-breed" name="breed">
+            <option>Beagle</option>
+            <option>Golden Retriever</option>
+            <option>Poodle</option>
+          </select>
+
+          <label for="dog-name">Dog name</label>
+          <input id="dog-name" name="name" type="text" maxlength="20"
+                 aria-describedby="name-hint name-error" required>
+          <small id="name-hint">Up to 20 characters.</small>
+          <p id="name-error" class="form-error" role="alert"></p>
+          <button type="submit">Adopt</button>
+        </form>
+
+        <div id="pet-status" hidden>
+          <h3 id="pet-name" tabindex="-1"></h3>
+          <p>Breed: <span id="pet-breed"></span></p>
+          <p>Day: <span id="pet-day"></span></p>
+          <p>Growth stage: <span id="pet-stage"></span></p>
+          <p aria-live="polite">Happiness: <span id="pet-happiness"></span>/100</p>
+          <button id="feed-button" type="button">Feed</button>
+          <button id="play-button" type="button">Play</button>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
